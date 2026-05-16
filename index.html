@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G S Lahari - AI & Automation Engineer | Data Engineer</title>
+  <title>G S Lahari - AI Automation Engineer | Data Engineer</title>
   <style>
     /* ─────────────────────────────────────────
        RESET & BASE
@@ -398,6 +398,7 @@
       background: rgba(167,139,250,.08); color: #c4b5fd;
       border-color: rgba(167,139,250,.25);
     }
+    .project-links { margin-top: 1rem; }
 
     /* ─────────────────────────────────────────
        SKILLS
@@ -577,7 +578,7 @@
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
     <li>
-      <a href="Lahari_s_resume.pdf" target="_blank" rel="noopener" class="nav-resume" style="cursor:pointer !important; opacity:1; border-style:solid; border-color:var(--border); color:var(--text-muted); text-decoration:none;">
+      <a href="lahari_resume_final.pdf" target="_blank" rel="noopener" class="nav-resume" style="cursor:pointer !important; opacity:1; border-style:solid; border-color:var(--border); color:var(--text-muted); text-decoration:none;">
         📄 Resume
       </a>
     </li>
@@ -606,8 +607,8 @@
   <div class="hero-content">
     <div class="hero-greeting">Hello, I'm</div>
     <h1 class="hero-name">G S Lahari</h1>
-    <div class="hero-title">AI &amp; Automation Engineer &nbsp;|&nbsp; Data Engineer</div>
-    <p class="hero-tagline" id="typewriter-text" data-text="Building production Copilot AI agents, automation workflows, and data pipelines that replace manual work at enterprise scale."></p>
+    <div class="hero-title">AI Automation Engineer &nbsp;|&nbsp; Data Engineer</div>
+    <p class="hero-tagline" id="typewriter-text" data-text="Building production AI workflows, LLM observability systems, and Snowflake data pipelines — end to end."></p>
     <div class="hero-cta">
       <a href="#contact" class="btn btn-primary">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -617,7 +618,7 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
         View Work
       </a>
-      <a href="Lahari_s_resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">
+      <a href="lahari_resume_final.pdf" target="_blank" rel="noopener" class="btn btn-outline">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         Resume
       </a>
@@ -644,20 +645,20 @@
     </div>
     <div class="about-stats stagger reveal-right">
       <div class="stat-card">
-        <div class="stat-num" data-count="20" data-suffix="+">0</div>
-        <div class="stat-label">Global Warehouse Facilities</div>
+        <div class="stat-num" data-count="300" data-suffix="+">0</div>
+        <div class="stat-label">Task Executions Saved / Week</div>
       </div>
       <div class="stat-card">
         <div class="stat-num" data-count="40" data-suffix="%">0</div>
         <div class="stat-label">Data Discrepancy Reduction</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num" data-count="5" data-suffix="+">0</div>
-        <div class="stat-label">Automation Workflows Shipped</div>
+        <div class="stat-num" data-count="500" data-suffix="+">0</div>
+        <div class="stat-label">Production Incidents Resolved</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num" data-count="9.15" data-suffix="" data-decimals="2">0</div>
-        <div class="stat-label">CGPA / 10</div>
+        <div class="stat-num" data-count="20" data-suffix="+">0</div>
+        <div class="stat-label">Global Warehouse Facilities</div>
       </div>
     </div>
   </div>
@@ -732,70 +733,81 @@
   <div class="projects-grid stagger">
 
     <div class="project-card">
-      <div class="project-icon">🤖</div>
-      <div class="project-name">Enterprise RAG Assistant</div>
+      <div class="project-icon">🐦</div>
+      <div class="project-name">Prompt Canary</div>
       <p class="project-desc">
-        Retrieval-augmented assistant over a 500+ page SOP corpus. Chunks and embeds docs into FAISS, serves GPT-4o-mini through Azure OpenAI, with a Streamlit UI that returns citation-backed answers. Evaluation harness measures groundedness and latency across 50 test questions.
+        CI/CD regression gate for LLM-powered features. Automatically blocks PR merges when a prompt change causes category accuracy to drop more than 8% or LLM-as-judge score to drop more than 0.5 — treating prompts as versioned, testable code. Includes a 60-case golden evaluation dataset across easy, medium, hard, and adversarial tiers with 7-run rolling-average drift detection.
       </p>
-      <div class="project-metric">Target: 91% groundedness, p95 latency under 2s</div>
+      <div class="project-metric">Catches prompt regressions before they reach production</div>
       <div class="tags">
-        <span class="tag purple">In Progress</span>
         <span class="tag">Python</span>
-        <span class="tag">LangChain</span>
-        <span class="tag">Azure OpenAI</span>
-        <span class="tag">FAISS</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">GitHub Actions</span>
+        <span class="tag">SQLite</span>
         <span class="tag">Streamlit</span>
-        <span class="tag">RAG</span>
+        <span class="tag">Slack API</span>
+        <span class="tag purple">LLM Eval</span>
+        <span class="tag purple">Prompt Regression</span>
+        <span class="tag purple">CI Gate</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/GSLAHARI/Prompt_Canary" target="_blank" rel="noopener" class="btn btn-outline" style="padding:.5rem 1.1rem; font-size:.85rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-icon">🔄</div>
-      <div class="project-name">Modern Data Stack Pipeline</div>
+      <div class="project-icon">🛡️</div>
+      <div class="project-name">LLM Sentinel</div>
       <p class="project-desc">
-        End-to-end ELT pipeline pulling NYC Open Data into Snowflake daily. Python extract, Airflow orchestration, 15+ dbt models with tests and incremental materialisations. Power BI dashboard on top with CI checks catching schema drift before production.
+        Production observability gateway that intercepts every LLM API call — logging requests, latency, cost, and quality scores. Includes a cost-aware model router, 4 anomaly detectors (rolling P95 latency, daily budget overruns, quality score drops, error rate surges), and Slack Block Kit alerting at warn and critical levels. Fully containerised with GitHub Actions CI.
       </p>
-      <div class="project-metric">API to Warehouse to BI, fully automated</div>
-      <div class="tags">
-        <span class="tag purple">In Progress</span>
-        <span class="tag">Python</span>
-        <span class="tag">Airflow</span>
-        <span class="tag">dbt</span>
-        <span class="tag">Snowflake</span>
-        <span class="tag purple">Power BI</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-icon">🫀</div>
-      <div class="project-name">Heart Disease Risk Prediction</div>
-      <p class="project-desc">
-        End-to-end ML pipeline predicting 10-year coronary heart disease risk on 4,000+ patient records.
-        Full EDA, feature engineering, and visualisation pipeline with clinical data.
-      </p>
-      <div class="project-metric">AUC 0.82 on holdout test set</div>
+      <div class="project-metric">Full APM-style visibility over your LLM stack</div>
       <div class="tags">
         <span class="tag">Python</span>
-        <span class="tag">Scikit-learn</span>
-        <span class="tag">Logistic Regression</span>
-        <span class="tag">ggplot2</span>
-        <span class="tag">Feature Eng.</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Pydantic v2</span>
+        <span class="tag">SQLite</span>
+        <span class="tag">Docker</span>
+        <span class="tag">GitHub Actions</span>
+        <span class="tag purple">LLM Observability</span>
+        <span class="tag purple">Anomaly Detection</span>
+        <span class="tag purple">Streamlit</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/GSLAHARI/llm-sentinel" target="_blank" rel="noopener" class="btn btn-outline" style="padding:.5rem 1.1rem; font-size:.85rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-icon">📊</div>
-      <div class="project-name">HR Analytics Dashboard</div>
+      <div class="project-icon">❄️</div>
+      <div class="project-name">Snowflake &amp; dbt RAG System</div>
       <p class="project-desc">
-        End-to-end HR analytics pipeline tracking attrition, headcount, and department performance
-        across 500+ employee records. Reduced manual reporting effort by ~60%.
+        Q&amp;A system over Snowflake and dbt documentation using hybrid retrieval — BGE-large dense vectors merged with BM25 via Reciprocal Rank Fusion (k=60), reranked by a BGE cross-encoder. Hand-curated 50-question benchmark across factual, conceptual, architectural, and adversarial tiers. CI gate fails the build when RAGAS faithfulness drops below 0.80; all queries traced end-to-end in Langfuse.
       </p>
-      <div class="project-metric">60% reduction in reporting effort</div>
+      <div class="project-metric">0.86 faithfulness on conceptual questions (best config)</div>
       <div class="tags">
-        <span class="tag purple">Power BI</span>
-        <span class="tag purple">DAX</span>
-        <span class="tag purple">Power Query</span>
-        <span class="tag">SQL</span>
+        <span class="tag">Python</span>
+        <span class="tag">Qdrant</span>
+        <span class="tag">BM25</span>
+        <span class="tag">RRF</span>
+        <span class="tag">RAGAS</span>
+        <span class="tag">Langfuse</span>
+        <span class="tag">Docker</span>
+        <span class="tag purple">Hybrid Retrieval</span>
+        <span class="tag purple">Cross-Encoder</span>
+        <span class="tag purple">Claude Sonnet</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/GSLAHARI/snowflake-dbt-rag" target="_blank" rel="noopener" class="btn btn-outline" style="padding:.5rem 1.1rem; font-size:.85rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
       </div>
     </div>
 
@@ -810,15 +822,59 @@
   <div class="skills-grid stagger">
 
     <div class="skill-group">
-      <div class="skill-group-title"><span class="ico">🤖</span> AI & Automation</div>
+      <div class="skill-group-title"><span class="ico">🤖</span> AI Automation</div>
       <div class="skill-pills">
-        <span class="skill-pill">Microsoft Copilot</span>
         <span class="skill-pill">Power Automate</span>
-        <span class="skill-pill">LangChain</span>
+        <span class="skill-pill">Microsoft Copilot Studio</span>
+        <span class="skill-pill">SharePoint Integration</span>
+        <span class="skill-pill">Teams Alerts</span>
+        <span class="skill-pill">Status Lifecycle Automation</span>
+        <span class="skill-pill">Deduplication Logic</span>
+        <span class="skill-pill">Workflow Orchestration</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-title"><span class="ico">🔍</span> LLM &amp; AI Engineering</div>
+      <div class="skill-pills">
         <span class="skill-pill">RAG</span>
+        <span class="skill-pill">Hybrid Retrieval (BM25 + RRF)</span>
+        <span class="skill-pill">Cross-Encoder Reranking</span>
+        <span class="skill-pill">Prompt Regression Testing</span>
+        <span class="skill-pill">LLM Observability</span>
+        <span class="skill-pill">RAGAS</span>
+        <span class="skill-pill">Langfuse</span>
+        <span class="skill-pill">LangChain</span>
         <span class="skill-pill">Azure OpenAI</span>
-        <span class="skill-pill">LLM Prompting</span>
-        <span class="skill-pill">Workflow Automation</span>
+        <span class="skill-pill">Claude Sonnet</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-title"><span class="ico">🔧</span> Data Engineering</div>
+      <div class="skill-pills">
+        <span class="skill-pill">Snowflake</span>
+        <span class="skill-pill">dbt</span>
+        <span class="skill-pill">Apache Airflow</span>
+        <span class="skill-pill">SnapLogic</span>
+        <span class="skill-pill">ETL/ELT Pipelines</span>
+        <span class="skill-pill">Incremental Loads</span>
+        <span class="skill-pill">Data Quality Frameworks</span>
+        <span class="skill-pill">Pipeline Observability</span>
+        <span class="skill-pill">Null Validation</span>
+        <span class="skill-pill">Anomaly Detection</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-title"><span class="ico">🗄️</span> Databases &amp; Vector Stores</div>
+      <div class="skill-pills">
+        <span class="skill-pill">Qdrant</span>
+        <span class="skill-pill">Snowflake</span>
+        <span class="skill-pill">MySQL</span>
+        <span class="skill-pill">SQL Server</span>
+        <span class="skill-pill">Oracle</span>
+        <span class="skill-pill">SQLite</span>
       </div>
     </div>
 
@@ -830,76 +886,38 @@
         <span class="skill-pill">Java</span>
         <span class="skill-pill">C</span>
         <span class="skill-pill">C++</span>
-        <span class="skill-pill">R</span>
         <span class="skill-pill">JavaScript</span>
       </div>
     </div>
 
     <div class="skill-group">
-      <div class="skill-group-title"><span class="ico">🔧</span> Data Engineering</div>
+      <div class="skill-group-title"><span class="ico">⚙️</span> Backend &amp; Infra</div>
       <div class="skill-pills">
-        <span class="skill-pill">SnapLogic</span>
-        <span class="skill-pill">dbt</span>
-        <span class="skill-pill">Airflow</span>
-        <span class="skill-pill">ETL Pipelines</span>
-        <span class="skill-pill">Incremental Ingestion</span>
-        <span class="skill-pill">Hadoop</span>
-        <span class="skill-pill">Data Warehousing</span>
+        <span class="skill-pill">FastAPI</span>
+        <span class="skill-pill">Pydantic v2</span>
+        <span class="skill-pill">Docker</span>
+        <span class="skill-pill">Docker Compose</span>
+        <span class="skill-pill">GitHub Actions CI/CD</span>
+        <span class="skill-pill">REST APIs</span>
       </div>
     </div>
 
     <div class="skill-group">
-      <div class="skill-group-title"><span class="ico">🗄️</span> Databases</div>
+      <div class="skill-group-title"><span class="ico">📈</span> Visualisation &amp; BI</div>
       <div class="skill-pills">
-        <span class="skill-pill">Snowflake</span>
-        <span class="skill-pill">MySQL</span>
-        <span class="skill-pill">SQL Server</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <div class="skill-group-title"><span class="ico">🧠</span> ML & Data Science</div>
-      <div class="skill-pills">
-        <span class="skill-pill">Scikit-learn</span>
-        <span class="skill-pill">Pandas</span>
-        <span class="skill-pill">NumPy</span>
-        <span class="skill-pill">Logistic Regression</span>
-        <span class="skill-pill">Random Forest</span>
-        <span class="skill-pill">Feature Engineering</span>
-        <span class="skill-pill">Streamlit</span>
-        <span class="skill-pill">FAISS</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <div class="skill-group-title"><span class="ico">📈</span> Visualisation</div>
-      <div class="skill-pills">
-        <span class="skill-pill">Power BI</span>
+        <span class="skill-pill">Power BI (DAX, Power Query)</span>
         <span class="skill-pill">Tableau</span>
-        <span class="skill-pill">Matplotlib</span>
-        <span class="skill-pill">ggplot2</span>
+        <span class="skill-pill">Streamlit</span>
       </div>
     </div>
 
     <div class="skill-group">
-      <div class="skill-group-title"><span class="ico">☁️</span> Cloud & Tools</div>
+      <div class="skill-group-title"><span class="ico">☁️</span> Cloud &amp; Tooling</div>
       <div class="skill-pills">
-        <span class="skill-pill">Microsoft Azure</span>
+        <span class="skill-pill">Microsoft Azure (AZ-900)</span>
         <span class="skill-pill">Git</span>
         <span class="skill-pill">Jupyter</span>
-        <span class="skill-pill">Django</span>
-        <span class="skill-pill">React</span>
-        <span class="skill-pill">VS Code</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <div class="skill-group-title"><span class="ico">🏭</span> Enterprise Systems</div>
-      <div class="skill-pills">
-        <span class="skill-pill">SAP</span>
-        <span class="skill-pill">Mainframes</span>
-        <span class="skill-pill">AWCS</span>
-        <span class="skill-pill">Oracle Database</span>
+        <span class="skill-pill">Agile/Scrum</span>
       </div>
     </div>
 
@@ -926,22 +944,6 @@
       <div>
         <div class="cert-name">Data Science Professional Certificate</div>
         <div class="cert-issuer">IBM · Coursera</div>
-      </div>
-    </div>
-
-    <div class="cert-card">
-      <div class="cert-icon">📦</div>
-      <div>
-        <div class="cert-name">Big Data</div>
-        <div class="cert-issuer">Coursera</div>
-      </div>
-    </div>
-
-    <div class="cert-card">
-      <div class="cert-icon">☕</div>
-      <div>
-        <div class="cert-name">Java Full Stack (WTN Phase 1 & 2)</div>
-        <div class="cert-issuer">Wipro Talent Next</div>
       </div>
     </div>
 
@@ -981,7 +983,6 @@
     <p class="contact-email reveal">
       📧&nbsp;<a href="mailto:lahari.gandla@gmail.com">lahari.gandla@gmail.com</a>
     </p>
-    <!-- TODO: Add GitHub link here once profile cleanup + pinned projects are done -->
     <div class="contact-links reveal">
       <a href="mailto:lahari.gandla@gmail.com" class="btn btn-primary">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -990,6 +991,10 @@
       <a href="https://www.linkedin.com/in/lahari-gs/" target="_blank" rel="noopener" class="btn btn-outline">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
+      </a>
+      <a href="https://github.com/GSLAHARI" target="_blank" rel="noopener" class="btn btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
       </a>
     </div>
   </div>
